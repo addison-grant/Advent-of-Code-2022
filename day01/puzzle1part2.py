@@ -2,17 +2,17 @@
 backpacks = []
 
 with open("puzzle1input.txt", "r") as f:
-    backpack_buff = []
+    backpack_buffer = []
     for line in f:
         if line != "\n":
-            backpack_buff.append(int(line))
+            backpack_buffer.append(int(line))
         else:
-            backpacks.append(backpack_buff)
-            backpack_buff = []
+            backpacks.append(backpack_buffer)
+            backpack_buffer = []
 
 calories = []
-for bp  in backpacks:
-    calories.append(sum(bp))
+for backpack in backpacks:
+    calories.append(sum(backpack))
 
 calories = sorted(calories)
 
