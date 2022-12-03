@@ -1,3 +1,6 @@
+# Puzzle input files
+*.in.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
